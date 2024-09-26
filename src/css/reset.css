@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.font-open-dyslexic *{
+    font-family: "OpenDyslexic";
+}
+
+:root {
+    --color-navy-blue: #2F6C81;
+    --color-navy-blue-menu: #2F6C81;
+    --color-light: #ffffff;
+    --color-pearl: #f9fbfc;
+    --color-bg: #ffffff;
+    --secondary-bg: #ffffff;
+    --color-cyan: #00BBB4;
+    --color-gray-light: rgba(217, 217, 217, 30%);
+    --shadow-light: #b6b6b6;
+    --color-gray-dark: #ADB4B0;
+    --shadow-gray: #00000059;
+    --color-gray-blueish: rgba(202, 208, 210, 0.4);
+    --color-dirty-blueish: rgba(231, 237, 240, 1);
+    --color-poor-blueish: rgb(198, 204, 207);
+    --color-dark: #272626;
+    --color-dark-opaco: rgba(0, 0, 0, 0.15);
+    --color-dark-opaco-audio: rgba(0, 0, 0, 0.3);
+    --color-dark-opaco-tooltip: rgba(34, 33, 33, 0.705);
+    --color-dirty-gray: #F9F9F9;
+    --font-big-size: 2rem;
+    --font-default-size: 1.4rem;
+    --font-short-size: 1.2rem;
+    --gradient-bluecyan: linear-gradient(90deg,
+            hsl(178deg 100% 37%) 0%,
+            hsl(182deg 65% 37%) 50%,
+            hsl(195deg 47% 35%) 100%);
+            
+        }
+        
+.dark {
+    --img-shiny: saturate(3);
+    --color-navy-blue: #2396bd;
+    --color-navy-blue-menu: rgba(231, 237, 240, 1);
+    --color-light: #ffffff;
+    --color-pearl: #00BBB4;
+    --color-bg: #222222;
+    --secondary-bg: #272727;
+    --color-cyan: #1bd4ce;
+    --color-gray-light: transparent;
+    --shadow-light: #1b1b1b;
+    --color-gray-dark: #ADB4B0;
+    --shadow-gray: transparent;
+    --color-gray-blueish: #313131;
+    --color-dirty-blueish: #272727;
+    --color-poor-blueish: #1f1e1e;
+    --color-dark: #ffffff;
+    --color-dark-opaco: rgba(0, 0, 0, 0.15);
+    --color-dark-opaco-audio: rgba(255, 255, 255, 0.3);
+    --color-dark-opaco-tooltip: rgba(34, 33, 33, 0.705);
+    --color-dirty-gray: #000000b8;
+    --font-big-size: 2rem;
+    --font-default-size: 1.4rem;
+    --font-short-size: 1.2rem;
+    --gradient-bluecyan: linear-gradient(90deg,
+        hsl(178, 96%, 41%) 0%,
+        hsl(182, 73%, 40%) 50%,
+        hsl(195, 81%, 37%) 100%);
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    cursor: default;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-gray-dark);
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: .7rem;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4rem;
+    background: var(--color-cyan);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+.hide-scrollbar {
+    overflow: hidden;
+}

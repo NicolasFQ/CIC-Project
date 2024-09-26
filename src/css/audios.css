@@ -1,0 +1,50 @@
+ .hidden{
+    display: none;
+ }
+ 
+ .audio-player{
+    margin-left: .5rem;
+ }
+
+  .play-button,
+  .pause-button {
+ 
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-left: .6rem;
+      padding-left: .1rem;
+      background-color: var(--color-dark-opaco-audio);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .pause-button {
+      display: none;
+  }
+
+  .menu-play{
+    margin: auto;
+    margin-top: 3.5rem;
+  }
+
+  .desc-play{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .graphic-play{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-filter-audio{
+    display: flex;
+    flex-direction: row;
+  }

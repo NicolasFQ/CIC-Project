@@ -1,0 +1,72 @@
+.loading {
+  z-index: 20;
+    position: absolute;
+   background-color: #ffffff;
+   color: #00BBB4;
+   height: 101%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  
+  .loading p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+  
+  .loading-page {
+   z-index: 30;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: linear-gradient(to right, #00BBB4, #2F6C81, #0f2027);
+   height: 101%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .loading .loading-page{
+  display: none;
+ }
+ 
+ #svg {
+   height: 150px;
+   width: 200px;
+   stroke: white;
+   fill-opacity: 0;
+   stroke-width: 2px;
+   stroke-dasharray: 4500;
+   animation: draw 15s ease;
+ }
+
+ @keyframes draw {
+   0% {
+     stroke-dashoffset: 4500;
+   }
+
+   100% {
+     stroke-dashoffset: 0;
+   }
+ }
+
+ .name-container {
+   height: 30px;
+   overflow: visible;
+ }
+
+ .logo-name {
+   color: #ffffff;
+   font-size: 20px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   margin-left: 20px;
+   font-weight: bolder;
+ }

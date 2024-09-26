@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIC Código</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/menu-lateral.css">
+    <link rel="stylesheet" href="./src/css/inicial-page.css">
+    <link rel="stylesheet" href="./src/css/dash-table.css">
+    <link rel="stylesheet" href="./src/css/modais.css">
+    <link rel="stylesheet" href="./src/css/filter-user.css">
+    <link rel="stylesheet" href="./src/css/loading-page.css">
+    <link rel="stylesheet" href="./src/css/fonte-dislexica.css">
+    <link rel="stylesheet" href="./src/css/audios.css">
+
+    <link rel="icon" type="image/png" href="./src/img/logotipo.png">
+    
+</head>
+
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+
+        <div class="loading">
+            <p>Feito só para você</p>
+        </div>
+
+    <div class="loading-page">
+        <svg id="svg" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3981909">
+            <g id="Infinity">
+                <path
+                    d="m47.93 16.04a15.965 15.965 0 0 0 -12.24 5.59l-2.37 2.73 5.29 6.11 3.12-3.6a8.1 8.1 0 0 1 6.2-2.83 7.961 7.961 0 1 1 0 15.92 8.065 8.065 0 0 1 -6.18-2.82c-11.586-13.378-6.081-7-13.44-15.52a15.989 15.989 0 0 0 -12.24-5.58 15.96 15.96 0 1 0 0 31.92 15.965 15.965 0 0 0 12.24-5.59l2.37-2.73-5.29-6.11-3.12 3.6a8.1 8.1 0 0 1 -6.2 2.83 7.961 7.961 0 1 1 0-15.92 8.065 8.065 0 0 1 6.18 2.82c11.586 13.378 6.081 7 13.44 15.52a16.032 16.032 0 1 0 12.24-26.34z">
+                </path>
+            </g>
+        </svg>
+
+        <div class="name-container">
+            <div class="logo-name">CIC - Controle Inteligente de Compensações</div>
+        </div>
+    </div>
+
+    <div class="animated-element"></div>
+
+    <div class="container-page">
+
+        <header class="side-menu">
+
+            <div class="logo">
+                
+                <img src="./src/img/logo.png" alt="Logo renovada da CIC">
+                <h3> Controle Inteligente de Compensação </h3>
+                <div class="audio-player">
+                    <button class="play-button menu-play">&#9658;</button>
+                    <button class="pause-button hidden menu-play">&#10074;&#10074;</button>
+                    <audio src="./src/audios/AudioBotaoMenu.mp3" class="audio"></audio>
+                </div>
+            </div>
+
+            <div class="menu-tabs">
+                <nav>
+                    <ul>
+                        <li class="item-menu onclick">
+                            <a href="#"><img src="./src/img/dashboard.png" alt="Icone do Dashboard da CIC"
+                                    class="dash-icon"> Dashboard
+                            </a>
+
+                        </li>
+                        <li class="item-menu">
+                            <a href="#"><img src="./src/img/upload.png" alt="Icone do Uploads dos Docs da CIC"
+                                    class="up-icon"> Upload de Documentos
+                            </a>
+
+                        </li>
+                        <li class="item-menu">
+                            <a href="#"><img src="./src/img/compliance.png" alt="Icone do Compliance da CIC"
+                                    class="comp-icon"> Compliance
+                            </a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="down-btn-menu">
+                <a href="" class="config-btn"><img src="./src/img/config.png" alt="Botão de Configuração da CIC"></a>
+                <div class="break-line"></div>
+                <div class="arrow-left"><img src="./src/img/arrowleft.png" alt="Seta para voltar o menu"></div>
+                <div class="arrow-right"><img src="./src/img/arrow-right.png" alt="Seta para voltar o menu"></div>
+            </div>
+        </header>
+
+        <div class="source">
+            <div class="inicial-page">
+                <header class="top-menu">
+                    <div class="welcome">
+                        <h3> <span>Olá,</span> André Maluf</h3>
+                        <div class="level-exp">
+                            <div class="level-bar"></div>
+                            <p> Lvl. 0</p>
+                        </div>
+                    </div>
+
+                    <div class="top-menu-tabs">
+                        <div class="toggle-page">
+                            <input type="checkbox" id="chbx">
+                            <p class="simplify">SIMPLIFY</p>
+                            <label for="chbx" class="switch"> <span class="slider"></span></label>
+                        </div>
+
+                        <button data-bs-target="#filterbtnmodal" data-bs-toggle="modal" class="filterimg"> <img
+                                src="./src/img/botao filtro.png" alt="Icone do botão de filtro"></button>
+
+                        <button data-bs-target="#userbtnmodal" data-bs-toggle="modal" class="userimg"> <img
+                                src="./src/img/perfil-maluf.png" alt="Icone do botão de usuario"></button>
+                    </div>
+
+                    <div class="modal fade" id="filterbtnmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-open-filter">
+                            <div class=" modal-content modal-content-filter">
+                                <div class="dark-mode">
+                                    <div class="dark-mode-info">
+                                        <img src="./src/img/icone dark.png" alt="ícone dark mode">
+                                        <div class="dark-mode-txt">
+                                            <h2>Modo Escuro</h2>
+                                            <p>Altere o esquema de cores da interface</p>
+                                        </div>
+                                    </div>
+                                    <div class="switch-btn">
+                                        <input type="checkbox" id="dark" class="chbx-filter">
+                                        <label for="dark" class="switch-filter"> <span
+                                                class="slider-filter"></span></label>
+                                    </div>
+                                </div>
+                                <div class="letter-size">
+                                    <div class="letter-size-info">
+                                        <img src="./src/img/icone tamanho.png" alt="ícone font size">
+                                        <div class="letter-size-txt">
+                                            <h2>Tamanho da letra</h2>
+                                            <p>Ajuste o tamanho da fonte</p>
+                                        </div>
+                                    </div>
+                                    <div class="range-letter">
+                                        <input type="range" class="range-letter" id="range-letter" name="range-letter"
+                                            min="1" max="3" step="1">
+                                        <div class="sizes-range">
+                                            <p> Pequena</p>
+                                            <p>Média</p>
+                                            <p>Grande</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="audio-screen">
+                                    <div class="audio-screen-info">
+                                        <img src="./src/img/icone leitor.png" alt="ícone leitor de página">
+                                        <div class="audio-screen-txt">
+                                            <h2>Leitor de tela</h2>
+                                            <p>Ative o leitor de tela para narrar o conteúdo</p>
+                                        </div>
+                                    </div>
+                                    <div class="switch-btn">
+                                        <input type="checkbox" id="chbx-audio" class="chbx-filter">
+                                        <label for="chbx-audio" class="switch-filter"> <span
+                                                class="slider-filter"></span></label>
+                                    </div>
+                                </div>
+                                <div class="dislexia-font">
+                                    <div class="dislexia-info">
+                                        <img src="./src/img/icone fonte.png" alt="ícone fonte disléxica">
+                                        <div class="dislexia-txt">
+                                            <h2>Fonte disléxica</h2>
+                                            <p>Mudar para a fonte OpenDyslexic</p>
+                                        </div>
+                                    </div>
+                                    <div class="switch-btn">
+                                        <input type="checkbox" id="chbx-dislexia" class="chbx-filter">
+                                        <label for="chbx-dislexia" class="switch-filter"> <span
+                                                class="slider-filter"></span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="userbtnmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-open-user">
+                            <div class=" modal-content modal-content-user">
+                                <div class="info-user">
+                                    <img src="./src/img/perfil-maluf.png" alt="ícone perfil do usuário">
+                                    <h2>André Maluf</h2>
+                                    <p>emailusuario@gmail.com</p>
+                                </div>
+                                <div class="user-functions">
+                                    <button class="user-change-acc">
+                                        Trocar de conta
+                                    </button>
+                                    <button class="user-exit">
+                                        <img src="./src/img/seta-exit.png" alt="ícone seta de logout">
+                                        Sair
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="description">
+                    <div class="desc-play">
+                    <h1>DASHBOARD</h1>
+                    <div class="audio-player">
+                        <button class="play-button">&#9658;</button>
+                        <button class="pause-button hidden">&#10074;&#10074;</button>
+                        <audio src="./src/audios/DashboardBotao.mp3" class="audio"></audio>
+                    </div>
+                    </div>
+                    <p> O Dashboard é uma ferramenta visual que oferece uma representação simplificada e dinâmica.
+                        Funciona
+                        como um painel de
+                        controle que permite ao usuário monitorar informações importantes de forma rápida e eficiente.
+                    </p>
+                </section>
+            </div>
+
+            <main class="dash-table">
+                <div class="tab-buttons">
+                    <button class="tab-btn active credit" content-id="creditos">
+                        Créditos
+                    </button>
+
+                    <button class="tab-btn" content-id="debitos">
+                        Débitos
+                    </button>
+
+                    <button class="tab-btn others" content-id="outros">
+                        Outros
+                    </button>
+                </div>
+
+                <div class="tab-contents">
+                    <div class="content show" id="creditos">
+
+                        <div class="txt-content">
+                            <div class="credit-info">
+                                <h3> Saldo de Crédito Atual <span type="button" class="btn content-btn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Valor de crédito disponível - Baseado nos arquivos carregados">
+                                        <img src="./src/img/information.png" class="info-btn" alt="ícone de informação">
+                                        <div class="audio-player">
+                                            <button class="play-button">&#9658;</button>
+                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                            <audio src="./src/audios/SaldoDeCredito.mp3" class="audio"></audio>
+                                        </div>
+                                    </span></h3>
+                                <p class="info-p"> <span>R$</span>20,0mil</p>
+                            </div>
+
+                            <div class="credit-info">
+                                <h3> Pedidos de Crédito<span type="button" class="btn content-btn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Quantidade de pedidos de restituição/ressarcimento de crédito registrados">
+                                        <img src="./src/img/information.png" class="info-btn" alt="ícone de informação">
+                                        <div class="audio-player">
+                                            <button class="play-button">&#9658;</button>
+                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                            <audio src="./src/audios/PedidosDeCredito.mp3" class="audio"></audio>
+                                        </div>
+                                    </span></h3>
+                                <p class="info-p">2</p>
+
+                                <div class="modal fade" id="docareas" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dash-credits">
+
+                                        <div class=" modal-content modal-content-credits">
+                                            <div class="modal-header modal-header-credits">
+                                                <h1>Pedidos de Crédito</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-title modal-title-credits">
+                                                <h2>Restituição/Ressarcimento</h2>
+                                            </div>
+                                            <div class="modal-body modal-body-credits">
+                                                <div class="modal-helper modal-helper-credits">
+                                                    <div class="modal-search modal-search-credits">
+                                                        <div class="modal-icon modal-icon-credits">
+                                                            <img src="./src/img/search lupa.png" alt="ícone lupa de pesquisa">
+                                                        </div>
+                                                        <input class="form-control modal-bar modal-bar-credits"
+                                                            type="search" placeholder="Buscar..." aria-label="Search">
+                                                        </input>
+                                                        <div class="dropdown">
+                                                            <button class="btn modal-btn" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="./src/img/pesquisa filtro.png" alt="ícone filtro de pesquisa">
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-docopen">
+                                                                <h2>Filtrar por:</h2>
+                                                                <div>
+                                                                    <input type="radio" id="check1" name="checklist"
+                                                                        value="Option1">
+                                                                    <label for="check1" class="custom-checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                        Mais recentes</label>
+                                                                </div>
+
+                                                                <div>
+                                                                    <input type="radio" id="check2" name="checklist"
+                                                                        value="Optio2">
+                                                                    <label for="check2" class="custom-checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                        Mais antigos</label>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="modal-tools modal-tools-credits">
+                                                        <div class="modal-tips modal-tips-credits">
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Adicionar Doc.">
+                                                                <button type="button" class="btn content-btn">
+                                                                    <img src="./src/img/Union.png" alt="ícone adicionar doc manualmente ">
+                                                                </button>
+                                                            </span>
+                                                            <span type="button" class="downloadBtn btn content-btn" data-filename="Relatório"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Relatórios">
+                                                                <img src="./src/img/download icon.png" alt="ícone downloads">
+                                                            </span>
+                                                            <span type="button" class="downloadBtn btn content-btn" data-filename="SaldoHistórico"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Saldo histórico">
+                                                                <img src="./src/img/saldodownload.png" alt="ícone saldo downloads">
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="audio-player">
+                                                            <button class="play-button">&#9658;</button>
+                                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                            <audio src="./src/audios/BotaoDocOpen.mp3" class="audio"></audio>
+                                                        </div>
+
+                                                        <div class="modal-price modal-price-credits">
+                                                            <h4>Total: <span> R$</span>40.000,00</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-table modal-table-credits">
+                                                    <div class="modal-categories modal-categories-credits">
+                                                        <div class="table-docs">
+                                                            <h3>Documentos</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                        <div class="table-docs">
+                                                            <h3>Tipo de Crédito</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                        <div class="table-docs">
+                                                            <h3>Crédito Inicial</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-docs modal-docs-credits">
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <ul class="pagination modal-pagination modal-pagination-credits">
+                                                        <li class="page-item"><a class="page-link" href="#"><img
+                                                                    src="./src/img/seta-lado-esquerdo.png" alt="ícone seta para a esqueda"></a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#"><img
+                                                                    src="./src/img/seta-lado-direito.png" alt="ícone seta para a direita"></a>
+                                                        </li>
+                                                    </ul>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn credit-btn" data-bs-toggle="modal"
+                                    data-bs-target="#docareas">
+                                    <p>Abrir Docs.</p>
+                                </button>
+                            </div>
+
+                            <div class="credit-info">
+                                <h3> Liquidação de Crédito <span type="button" class="btn content-btn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Detalhe do valor de pagamento de ressarcimento e restituição">
+                                        <img src="./src/img/information.png" class="info-btn" alt="ícone informação">
+                                        <div class="audio-player">
+                                            <button class="play-button">&#9658;</button>
+                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                            <audio src="./src/audios/LiquidaçãoCredito.mp3" class="audio"></audio>
+                                        </div>
+                                    </span></h3>
+                                <p class="info-p"> <span>R$</span>1,5mil</p>
+                            </div>
+                        </div>
+
+
+                        <div class="bottom-content">
+                            <div class="visual-content">
+                            
+                                <div class="graphic-content">
+                                    <div class="graphic-navy graphic-navy-credits" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Você têm R$8.000,00 de créditos restantes - Os documentos mais recentes que tiveram seus créditos utilizados são: DOC1 - CNPJ 00001.000000/0000-00; DOC2 - CNPJ 00002.000000/0000-0">
+                                        <p>80%</p>
+                                    </div>
+                                    <div class="graphic-cyan graphic-cyan-credits" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Você têm R$2.000,00 de créditos utilizados - Esses créditos foram utilizados em: DOC1 - CNPJ 00001.000000/0000-00; Adicionados na Reserva: R$500,00">
+                                        <p>20%</p>
+                                    </div>
+                                    <div class="graphic-gray" data-bs-toggle="tooltip" data-bs-placement="right"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Você iniciou essa ação com R$10.000,00 - Os documentos mais recentes adicionados são: DOC1 - CNPJ 00001.000000/0000-00; DOC2 - CNPJ 00002.000000/0000-0">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="audio-player">
+                                    <button class="play-button">&#9658;</button>
+                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                    <audio src="./src/audios/GraficoBotao.mp3" class="audio"></audio>
+                                </div>
+                            </div>
+
+                            <div class="information-content">
+
+                                <form class="d-flex" role="search">
+                                    <div class="search-icon">
+                                        <img src="./src/img/search lupa.png" alt="ícone lupa">
+                                    </div>
+                                    <select class="form-control search-bar" type="search" aria-label="Search">
+                                        <option value="">Informações Gerais...</option>
+                                        <option value="irrf">IRRF Juros sobre o Capital Próprio</option>
+                                        <option value="cofinsmercado">COFINS - Mercado Interno</option>
+                                        <option value="cofinsresar">COFINS - Ressarcimento/Compensação</option>
+                                        <option value="irpj">IRPJ</option>
+                                    </select>
+
+                                    <div class="modal fade modal-fade-filter-cards" id="filterdrop" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-filter-cards">
+                                            <div class=" modal-content modal-content-filter-cards">
+
+                                                <div class="cards-filter-audio">
+                                                    <h1>Selecione sua preferência:</h1>
+                                                    <div class="audio-player">
+                                                        <button class="play-button" type="button">&#9658;</button>
+                                                        <button class="pause-button hidden" type="button">&#10074;&#10074;</button>
+                                                        <audio src="./src/audios/BotaoFiltroCards.mp3" class="audio"></audio>
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-content-filter">
+                                                    <h2>Filtrar por Unidade</h2>
+                                                    <select class="form-control search-bar-filter" type="search"
+                                                        aria-label="Search">
+                                                        <option value="">Nenhuma opção selecionada</option>
+                                                        <option value="doc1">Doc1</option>
+                                                        <option value="doc2">Doc2</option>
+                                                        <option value="doc3">Doc3</option>
+                                                        <option value="doc4">Doc4</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="search-content-filter">
+                                                    <h2>Filtrar por CNPJ de Crédito </h2>
+                                                    <select class="form-control  search-bar-filter" type="search"
+                                                        aria-label="Search">
+                                                        <option value="">Nenhuma opção selecionada</option>
+                                                        <option value="cnpj1">CNPJ 00001.000000/0000-00</option>
+                                                        <option value="cnpj2">CNPJ 00002.000000/0000-00</option>
+                                                        <option value="cnpj3">CNPJ 00003.000000/0000-00</option>
+                                                        <option value="cnpj4">CNPJ 00004.000000/0000-00</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="search-content-filter">
+                                                    <h2>Filtrar por Código de Receita </h2>
+                                                    <select class="form-control search-bar-filter" type="search"
+                                                        aria-label="Search">
+                                                        <option value="">Nenhuma opção selecionada</option>
+                                                        <option value="cod1">0000-01</option>
+                                                        <option value="cod2">0000-02</option>
+                                                        <option value="cod3">0000-03</option>
+                                                        <option value="cod4">0000-04</option>
+                                                    </select>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn search-btn search-bar" data-bs-toggle="modal"
+                                        data-bs-target="#filterdrop">
+                                        <img src="./src/img/pesquisa filtro.png" alt="ícone filtro de pesquisa">
+                                    </button>
+                                </form>
+
+                                <div class="cards-box">
+                                    <div class="card-item card-gray" id="graycard">
+                                        <div class="card-btn">
+                                            <span type="button" class="btn content-btn" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Valor inicial do saldo de crédito atual - Baseado nos arquivos carregados">
+                                                <img src="./src/img/card-info.png" class="info-btn" alt="ícone botão de informação">
+                                                <div class="audio-player">
+                                                    <button class="play-button">&#9658;</button>
+                                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                    <audio src="./src/audios/CréditoInicial.mp3" class="audio"></audio>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                        <h4>Crédito</h4>
+                                        <h3>Inicial</h3>
+                                        <p><span>R$</span>10,0mil</p>
+
+                                    </div>
+
+                                    <div class="card-item card-cyan cyan-credits">
+                                        <div class="card-btn">
+                                            <span type="button" class="btn content-btn" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Valor inicial utilizado para a compensação de débitos - Baseado nos arquivos carregados."> 
+                                                <img src="./src/img/card-info.png" class="info-btn" alt="ícone botão de informação">
+                                                <div class="audio-player">
+                                                    <button class="play-button">&#9658;</button>
+                                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                    <audio  src="./src/audios/CréditoUtilizado.mp3" class="audio"></audio>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                        <h4>Crédito</h4>
+                                        <h3>Utilizado</h3>
+                                        <p><span>R$</span>2,0mil</p>
+
+                                    </div>
+
+                                    <div class="card-item card-navy">
+                                        <div class="card-btn">
+                                            <span type="button" class="btn content-btn" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Valor de crédito restante - Baseado na compensação de débitos">
+                                                <img src="./src/img/card-info.png" class="info-btn" alt="ícone botão de informação">
+                                                <div class="audio-player">
+                                                    <button class="play-button">&#9658;</button>
+                                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                    <audio  src="./src/audios/CréditoRestante.mp3" class="audio"></audio>
+                                                </div>
+                                            </span>
+                                        </div>
+
+
+                                        <h4>Crédito</h4>
+                                        <h3>Restante</h3>
+                                        <p><span>R$</span>8,0mil</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="upload-doc">
+                                    <span type="button" class="downloadBtn btn content-btn" data-filename="Relatório" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Baixar Relatório">
+                                        <img src="./src/img/download icon.png" alt="Download Icon">
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="debitos">
+
+                        <div class="txt-content-debits">
+                            <div class="credit-info">
+                                <h3> Saldo de Débito Atual <span type="button" class="btn content-btn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Total de saídas registrados - Baseado nos arquivos carregados">
+                                        <img src="./src/img/information.png" class="info-btn" alt="ícone botão de informação">
+                                        <div class="audio-player">
+                                            <button class="play-button">&#9658;</button>
+                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                            <audio  src="./src/audios/SaldoDébito.mp3" class="audio"></audio>
+                                        </div>
+                                    </span></h3>
+                                <p class="info-p"> <span>R$</span>15,0mil</p>
+                            </div>
+
+                            <div class="credit-info">
+                                <h3> Declaração de Compensados<span type="button" class="btn content-btn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Documentos que ajustam débitos e créditos para equilibrar obrigações financeiras">
+                                        <img src="./src/img/information.png" class="info-btn" alt="ícone botão de informação">
+                                        <div class="audio-player">
+                                            <button class="play-button">&#9658;</button>
+                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                            <audio  src="./src/audios/DeclaraçãoCompensados.mp3" class="audio"></audio>
+                                        </div>
+                                    </span></h3>
+                                <p class="info-p">1</p>
+
+
+                                <button type="button" class="btn credit-btn" data-bs-toggle="modal"
+                                    data-bs-target="#docareas-debits">
+                                    <p>Abrir Docs.</p>
+                                </button>
+
+                                <div class="modal fade" id="docareas-debits" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dash-debits">
+
+                                        <div class=" modal-content modal-content-debits">
+                                            <div class="modal-header modal-header-debits">
+                                                <h1>Declaração de Compensados</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-title modal-title-debits">
+                                                <h2>Débitos Compensados</h2>
+                                            </div>
+                                            <div class="modal-body modal-body-debits">
+                                                <div class="modal-helper modal-helper-debits">
+                                                    <div class="modal-search modal-search-debits">
+                                                        <div class="modal-icon modal-icon-debits">
+                                                            <img src="./src/img/search lupa.png" alt="ícone lupa">
+                                                        </div>
+                                                        <input class="form-control modal-bar modal-bar-debits"
+                                                            type="search" placeholder="Buscar..." aria-label="Search">
+                                                        </input>
+                                                        <div class="dropdown">
+                                                            <button class="btn modal-btn" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="./src/img/pesquisa filtro.png" alt="ícone filtro de pesquisa">
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-docopen">
+                                                                <h2>Filtrar por:</h2>
+                                                                <div>
+                                                                    <input type="radio" id="check3" name="checklist"
+                                                                        value="Option3">
+                                                                    <label for="check3" class="custom-checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                        Mais recentes</label>
+                                                                </div>
+
+                                                                <div>
+                                                                    <input type="radio" id="check4" name="checklist"
+                                                                        value="Option4">
+                                                                    <label for="check4" class="custom-checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                        Mais antigos</label>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="modal-tools modal-tools-debits">
+                                                        <div class="modal-tips modal-tips-debits">
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Adicionar Doc.">
+                                                                <button type="button" class="btn content-btn">
+                                                                    <img src="./src/img/Union.png" alt="ícone adicionar doc manualmente">
+                                                                </button>
+                                                            </span>
+                                                            <span type="button" class="downloadBtn btn content-btn" data-filename="Relatório"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Relatórios">
+                                                                <img src="./src/img/download icon.png" alt="ícone downloads">
+                                                            </span>
+                                                            <span type="button" class="downloadBtn btn content-btn" data-filename="SaldoHistórico"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Saldo histórico">
+                                                                <img src="./src/img/saldodownload.png" alt="ícone saldo de downloads">
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="audio-player">
+                                                            <button class="play-button">&#9658;</button>
+                                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                            <audio  src="./src/audios/DébitosOpen.mp3" class="audio"></audio>
+                                                        </div>
+                                                        
+                                                        <div class="modal-price modal-price-debits">
+                                                            <h4>Total: <span> R$</span>40.000,00</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-table modal-table-debits">
+                                                    <div class="modal-categories modal-categories-debits">
+                                                        <div class="table-docs">
+                                                            <h3>Declarações</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                        <div class="table-docs">
+                                                            <h3>Crédito de Origem</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                        <div class="table-docs">
+                                                            <h3>Valor Compensado</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-docs modal-docs-debits">
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>COFINS - Mercado Interno</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3><span>R$</span>10.000,00</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <ul class="pagination modal-pagination modal-pagination-debits">
+                                                        <li class="page-item"><a class="page-link" href="#"><img
+                                                                    src="./src/img/seta-lado-esquerdo.png" alt="ícone seta para a esqueda"></a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#"><img
+                                                                    src="./src/img/seta-lado-direito.png" alt="ícone seta para a direita"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="bottom-content">
+                            <div class="visual-content">
+                                <div class="graphic-content">
+                                    <div class="graphic-navy graphic-navy-debits" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Você têm R$1.500,00 de débitos pendentes - Os documentos pendentes mais recentes são: DOC1 - CNPJ 00001.000000/0000-00; DOC2 - CNPJ 00002.000000/0000-0">
+                                        <p>50%</p>
+                                    </div>
+                                    <div class="graphic-cyan graphic-cyan-debits" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Você têm R$1.500,00 de débitos compensados - Os documentos compensados mais recentes são: DOC1 - CNPJ 00001.000000/0000-00; DOC2 - CNPJ 00002.000000/0000-0">
+                                        <p>50%</p>
+                                    </div>
+                                    <div class="graphic-gray" data-bs-toggle="tooltip" data-bs-placement="right"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Você começou essa ação com uma pendência de R$3.000,00 débitos iniciais - Os documentos com débitos mais recentes são: DOC1 - CNPJ 00001.000000/0000-00; DOC2 - CNPJ 00002.000000/0000-0 ">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="audio-player">
+                                    <button class="play-button">&#9658;</button>
+                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                    <audio  src="./src/audios/GráficoDébitos.mp3" class="audio"></audio>
+                                </div>
+                            </div>
+
+                            <div class="information-content">
+
+                                <form class="d-flex" role="search">
+                                    <div class="search-icon">
+                                        <img src="./src/img/search lupa.png" alt="ícone lupa">
+                                    </div>
+                                    <select class="form-control search-bar" type="search" aria-label="Search">
+                                        <option value="">Informações Gerais...</option>
+                                        <option value="irrf">IRRF Juros sobre o Capital Próprio</option>
+                                        <option value="cofinsmercado">COFINS - Mercado Interno</option>
+                                        <option value="cofinsresar">COFINS - Ressarcimento/Compensação</option>
+                                        <option value="irpj">IRPJ</option>
+                                    </select>
+                                    <div class="modal fade" id="filterdrop2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-filter-cards">
+                                            <div class=" modal-content modal-content-filter-cards">
+
+                                                <div class="cards-filter-audio">
+                                                <h1>Selecione sua preferência:</h1>
+                                                <div class="audio-player">
+                                                    <button class="play-button" type="button">&#9658;</button>
+                                                    <button class="pause-button hidden" type="button">&#10074;&#10074;</button>
+                                                    <audio  src="./src/audios/FiltroDebitos.mp3" class="audio"></audio>
+                                                </div>
+                                                </div>
+
+                                                <div class="search-content-filter">
+                                                    <h2>Filtrar por Unidade</h2>
+                                                    <select class="form-control search-bar-filter" type="search"
+                                                        aria-label="Search">
+                                                        <option value="">Nenhuma opção selecionada</option>
+                                                        <option value="doc1">Doc1</option>
+                                                        <option value="doc2">Doc2</option>
+                                                        <option value="doc3">Doc3</option>
+                                                        <option value="doc4">Doc4</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="search-content-filter">
+                                                    <h2>Filtrar por CNPJ de Débito </h2>
+                                                    <select class="form-control  search-bar-filter" type="search"
+                                                        aria-label="Search">
+                                                        <option value="">Nenhuma opção selecionada</option>
+                                                        <option value="cnpj1">CNPJ 00001.000000/0000-00</option>
+                                                        <option value="cnpj2">CNPJ 00002.000000/0000-00</option>
+                                                        <option value="cnpj3">CNPJ 00003.000000/0000-00</option>
+                                                        <option value="cnpj4">CNPJ 00004.000000/0000-00</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="search-content-filter">
+                                                    <h2>Filtrar por Código de Receita </h2>
+                                                    <select class="form-control search-bar-filter" type="search"
+                                                        aria-label="Search">
+                                                        <option value="">Nenhuma opção selecionada</option>
+                                                        <option value="cod1">0000-01</option>
+                                                        <option value="cod2">0000-02</option>
+                                                        <option value="cod3">0000-03</option>
+                                                        <option value="cod4">0000-04</option>
+                                                    </select>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn search-btn search-bar" data-bs-toggle="modal"
+                                        data-bs-target="#filterdrop2">
+                                        <img src="./src/img/pesquisa filtro.png" alt="ícone filtro de pesquisa">
+                                    </button>
+                                </form>
+
+                                <div class="cards-box">
+                                    <div class="card-item card-gray" id="graycard">
+                                        <div class="card-btn">
+                                            <span type="button" class="btn content-btn" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Valor total que se deve no início do período contábil ou financeiro - Baseado nos arquivos carregados">
+                                                <img src="./src/img/card-info.png" class="info-btn" alt="ícone de informação">
+                                                <div class="audio-player">
+                                                    <button class="play-button">&#9658;</button>
+                                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                    <audio  src="./src/audios/DébitoInicial.mp3" class="audio"></audio>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                        <h4>Débito</h4>
+                                        <h3>Inicial</h3>
+                                        <p><span>R$</span>3,0mil</p>
+
+                                    </div>
+
+                                    <div class="card-item card-cyan">
+                                        <div class="card-btn card-btn-debits">
+                                            <span type="button" class="btn content-btn" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Débito ajustado após compensações ou pagamentos - Baseado nos arquivos carregados">
+                                                <img src="./src/img/card-info.png" class="info-btn"  alt="ícone de informação">
+                                                <div class="audio-player">
+                                                    <button class="play-button">&#9658;</button>
+                                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                    <audio  src="./src/audios/DébitoCompensado.mp3" class="audio"></audio>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                        <h4>Débito</h4>
+                                        <h3 class="debits-h3">Compensado</h3>
+                                        <p><span>R$</span>1,5mil</p>
+
+                                    </div>
+
+                                    <div class="card-item card-navy">
+                                        <div class="card-btn">
+                                            <span type="button" class="btn content-btn" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Valor que ainda precisa ser liquidado - Baseado nos arquivos caregados">
+                                                <img src="./src/img/card-info.png" class="info-btn" alt="ícone de informação">
+                                                <div class="audio-player">
+                                                    <button class="play-button">&#9658;</button>
+                                                    <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                    <audio  src="./src/audios/DébitoPendente.mp3" class="audio"></audio>
+                                                </div>
+                                            </span>
+                                        </div>
+
+
+                                        <h4>Débito</h4>
+                                        <h3>Pendente</h3>
+                                        <p><span>R$</span>1,5mil</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="upload-doc">
+                                    <span type="button" class="downloadBtn btn content-btn" data-filename="Relatório" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Baixar Relatório">
+                                        <img src="./src/img/download icon.png" alt="Download Icon">
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content" id="outros">
+
+                        <div class="txt-content-debits-others">
+
+                            <div class="credit-info credit-info-others">
+                                <h3> Processo Administrativo<span type="button" class="btn content-btn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Procedimentos para gerenciar e resolver questões administrativas">
+                                        <img src="./src/img/information.png" class="info-btn" alt="ícone de informação">
+                                        <div class="audio-player">
+                                            <button class="play-button">&#9658;</button>
+                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                            <audio  src="./src/audios/ProcessoADM.mp3" class="audio"></audio>
+                                        </div>
+                                    </span></h3>
+                                <p class="info-p">3</p>
+
+
+                                <button type="button" class="btn credit-btn" data-bs-toggle="modal"
+                                    data-bs-target="#docareas-others">
+                                    <p>Abrir Docs.</p>
+                                </button>
+
+                                <div class="modal fade" id="docareas-others" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dash-others">
+
+                                        <div class=" modal-content modal-content-others">
+                                            <div class="modal-header modal-header-others">
+                                                <h1>Processo Administrativo</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-title modal-title-others">
+                                                <h2>Ação Judicial</h2>
+                                            </div>
+                                            <div class="modal-body modal-body-others">
+                                                <div class="modal-helper modal-helper-others">
+                                                    <div class="modal-search modal-search-others">
+                                                        <div class="modal-icon modal-icon-others">
+                                                            <img src="./src/img/search lupa.png" alt="ícone de lupa">
+                                                        </div>
+                                                        <input class="form-control modal-bar modal-bar-others"
+                                                            type="search" placeholder="Buscar..." aria-label="Search">
+                                                        </input>
+                                                        <div class="dropdown">
+                                                            <button class="btn modal-btn" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="./src/img/pesquisa filtro.png" alt="ícone filtro de pequisa">
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-docopen">
+                                                                <h2>Filtrar por:</h2>
+                                                                <div>
+                                                                    <input type="radio" id="check5" name="checklist"
+                                                                        value="Option5">
+                                                                    <label for="check5" class="custom-checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                        Mais recentes
+                                                                    </label>
+                                                                </div>
+
+                                                                <div>
+                                                                    <input type="radio" id="check6" name="checklist"
+                                                                        value="Option6">
+                                                                    <label for="check6" class="custom-checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                        Mais antigos</label>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="modal-tools modal-tools-others">
+                                                        <div class="modal-tips modal-tips-others">
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Adicionar Doc.">
+                                                                <button type="button" class="btn content-btn">
+                                                                    <img src="./src/img/Union.png" alt="ícone adicionar doc manualmente">
+                                                                </button>
+                                                            </span>
+                                                            <span type="button" class="downloadBtn btn content-btn" data-filename="Relatório"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Relatórios">
+                                                                <img src="./src/img/download icon.png" alt="ícone downloads">
+                                                            </span>
+                                                            <span type="button" class="downloadBtn btn content-btn" data-filename="SaldoHistórico"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                data-bs-custom-class="custom-tooltip"
+                                                                data-bs-title="Saldo histórico">
+                                                                <img src="./src/img/saldodownload.png" alt="ícone saldo de downloads">
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="audio-player">
+                                                            <button class="play-button">&#9658;</button>
+                                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                                            <audio  src="./src/audios/ProcessoADMopen.mp3" class="audio"></audio>
+                                                        </div>
+
+                                                        <div class="modal-price modal-price-others">
+                                                            <h4>Total: <span> R$</span>40.000,00</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-table modal-table-others">
+                                                    <div class="modal-categories modal-categories-others">
+                                                        <div class="table-docs">
+                                                            <h3>Processo de Habilitação</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                        <div class="table-docs">
+                                                            <h3>Tributo</h3>
+                                                            <img src="./src/img/seta.png" alt="ícone seta para baixo">
+                                                        </div>
+
+                                                        <div class="table-docs">
+                                                            <h3>Crédito Inicial</h3>
+                                                            <img src="./src/img/seta.png" alt=ícone seta para baixo"">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-docs modal-docs-others">
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>__</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3>__</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>__</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3>__</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>__</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3>__</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>__</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3>__</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="doc-file">
+                                                            <a href="./src/pdf/teste.pdf" target="_blank">
+                                                                <div class="doc-view">
+                                                                    <img src="./src/img/docicon.png" alt="ícone de documentação">
+                                                                    <div class="cnpj-doc">
+                                                                        <h2>00001.000000/0000-00</h2>
+                                                                        <p>DD/MM/YY</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="doc-group">
+                                                                    <h2>__</h2>
+                                                                </div>
+                                                                <div class="doc-price">
+                                                                    <h3>__</h3>
+                                                                </div>
+                                                            </a>
+                                                            <button class="doc-editor">
+                                                                <img src="./src/img/editor.png" alt="ícone de edição">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <ul class="pagination modal-pagination modal-pagination-others">
+                                                        <li class="page-item"><a class="page-link" href="#"><img
+                                                                    src="./src/img/seta-lado-esquerdo.png" alt="ícone seta para a esquerda"></a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#"><img
+                                                                    src="./src/img/seta-lado-direito.png" alt="ícone seta para a direita"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="credit-info credit-info-others">
+                                <h3> Valor de Reserva <span type="button" class="btn content-btn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Reserva destinada a cobrir possíveis perdas por não cumprimento de pagamento">
+                                        <img src="./src/img/information.png" class="info-btn" alt="ícone de informação">
+                                        <div class="audio-player">
+                                            <button class="play-button">&#9658;</button>
+                                            <button class="pause-button hidden">&#10074;&#10074;</button>
+                                            <audio  src="./src/audios/ValorReserva.mp3" class="audio"></audio>
+                                        </div>
+                                    </span></h3>
+                                <p class="info-p"> <span>R$</span>500,0</p>
+                            </div>
+                        </div>
+
+                        <div class="upload-doc upload-doc-others">
+                            <span class="downloadBtn btn content-btn" data-filename="Relatório" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-custom-class="custom-tooltip" data-bs-title="Baixar Relatório">
+                                <img src="./src/img/download icon.png" alt="Download Icon">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+ 
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+        </script>
+
+    <script src="./src/javascript/dash-table.js"></script>
+    <script src="./src/javascript/tooltip.js"></script>
+    <script src="./src/javascript/darkmode.js"></script>
+    <script src="./src/javascript/fontsize.js"></script>
+    <script src="./src/javascript/fontedislexica.js"></script>
+    <script src="./src/javascript/audios.js"></script>
+    <script src="./src/javascript/baixarArquivos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/javascript/loading-page.js"></script>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+</html>

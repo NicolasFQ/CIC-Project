@@ -1,0 +1,195 @@
+.source {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicial-page {
+    margin: 1rem 0rem 1rem 0;
+    padding: 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+}
+
+.top-menu {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-menu span,
+.top-menu h3 {
+    font-size: 2.5rem;
+    color: var(--color-navy-blue);
+}
+
+.top-menu span {
+    font-weight: 800;
+}
+
+.top-menu h3 {
+    font-weight: 300;
+    margin-left: 5rem;
+}
+
+.welcome {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level-exp {
+    margin-left: 11rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.level-bar {
+    transition: .4s;
+    background-color: var(--color-gray-blueish);
+    width: 25rem;
+    height: .7rem;
+    border-radius: 3rem;
+}
+
+.level-exp p {
+    width: 8rem;
+    margin: 0;
+    color: var(--color-gray-dark);
+}
+
+.top-menu-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.top-menu-tabs button {
+    border: none;
+    background-color: transparent;
+}
+
+
+.simplify {
+    color: var(--color-gray-dark);
+    font-size: var(--font-short-size);
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+#chbx {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    background-color: var(--color-gray-dark);
+    width: 6rem;
+    height: 3.5rem;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 3.8px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    background-color: var(--color-light);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all .5s ease-in-out;
+}
+
+#chbx:checked~.switch {
+    background-color: var(--color-cyan);
+}
+
+#chbx:checked~.simplify {
+    color: var(--color-cyan);
+    transition: .5s ease-in;
+}
+
+#chbx:checked~.switch .slider {
+    transform: translateX(25px);
+}
+
+.description {
+    padding-left: 7rem;
+}
+
+.description h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-wrap: wrap;
+    background-image: var(--gradient-bluecyan);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.description p {
+    width: 95%;
+    font-size: var(--font-big-size);
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    text-wrap: wrap;
+    color: var(--color-navy-blue);
+}
+
+
+@media(max-width: 810px) {
+    .inicial-page {
+        align-items: start;
+    }
+
+    .top-menu {
+        width: 70%;
+        gap: 3rem;
+    }
+
+    .top-menu span,
+    .top-menu h3 {
+        font-size: var(--font-big-size);
+    }
+
+    .level-bar {
+        width: 17rem;
+    }
+
+}
+
+@media(max-width: 685px) {
+    .top-menu {
+        width: 60%;
+        gap: 2rem;
+    }
+
+    .top-menu span,
+    .top-menu h3 {
+        font-size: var(--font-big-size);
+    }
+
+    .level-bar {
+        width: 14rem;
+    }
+
+}
